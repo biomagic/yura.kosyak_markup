@@ -107,7 +107,7 @@ select:focus {
 }
 /* Logo section */
 .logo {
-    height: 93px;
+    min-height: 93px;
 }
 .logo__top-line {
     background-color: #4597e9;
@@ -549,7 +549,7 @@ select:focus {
 /* Login form */
 
 .login {
-    height: 213px;
+    min-height: 213px;
 }
 .login__p {
     font-size: 14px;
@@ -557,7 +557,7 @@ select:focus {
 }
 .login__form {
     padding: 21px 20px 11px 20px;
-    height: 178px;
+    min-height: 178px;
 }
 .login__input {
     height: 30px;
@@ -780,7 +780,6 @@ select:focus {
     }
     .aside-left,
     .aside-right {
-        flex-basis: auto;
         margin: 0 2px;
     }
     .articles-h__img {
@@ -1059,11 +1058,10 @@ select:focus {
 }
 @media (max-width: 320px) {
     .body > * {
-        margin: 0 5px;
-        width: 310px;
+        min-width: 280px;
     }
     .logo {
-        height: 70px;
+        min-height: 50px;
     }
     .logo__block {
         flex-direction: row;
@@ -1127,5 +1125,8 @@ select:focus {
     }
     .navigation {
         display: none;
+    }
+    .main {
+        padding: 8px;
     }
 }
