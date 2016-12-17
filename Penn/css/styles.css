@@ -226,7 +226,9 @@ input[type="search"]:focus {
 	color: #fff;
 }
 .dropdown:hover > .submenu {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	max-height: 500px;
 }
 .dropdown:after {
 	content: "\25BA";
@@ -245,7 +247,10 @@ input[type="search"]:focus {
 	left: 100%;
 	top: 0;
 	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	max-height: 0;
+	transition: all 0.55s ease-out;
 }
 .submenu__li {
 	line-height: 32px;
@@ -312,7 +317,7 @@ input[type="search"]:focus {
 .request-block {
 	border: 3px solid #e6e6e6;
 	background: linear-gradient(to bottom, #f6f7f9, #fff);
-	height: 90px;
+	min-height: 90px;
 	margin-top: 31px;
 }
 .request-block__button {
@@ -320,7 +325,7 @@ input[type="search"]:focus {
 	font-size: 128.57142857142858%;
 	display: block;
 	height: auto;
-	width: 310px;
+	width: 85.6798%;
 	background: linear-gradient(to bottom, #dfb872, #a88a55);
 	margin: auto;
 	box-shadow: 0 0 0 1px rgba(255, 255, 255, .7), 0 0 3px 0px rgba(0, 0, 0, .8);
@@ -564,9 +569,10 @@ input[type="search"]:focus {
 	}
 }
 @media (max-width: 480px) {
+
 	.request-block {
 		margin-top: 15px;
-		height: 70px;
+		min-height: 70px;
 	}
 	.more-header__p {
 		white-space: normal;
@@ -576,3 +582,12 @@ input[type="search"]:focus {
 		align-self: center;
 	}
 }
+@media (max-width: 320px) {
+	.wrapper {
+	min-width: 300px;
+	}
+	.request-block__button {
+		font-size: 110%;
+	}
+}
+
