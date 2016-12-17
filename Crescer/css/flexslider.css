@@ -27,8 +27,7 @@
 }
 .flex-control-nav li {
   zoom: 1;
-  margin-left: 6%;
-  margin-right: 6%;
+  margin: auto;
 }
 .flex-control-paging li a {
   width: 20px;
@@ -68,7 +67,6 @@ div.flexslider {
       bottom: 2px;
     }
     .flex-control-nav li {
-      margin: 0 4.8%;
     }
     .flex-control-paging li a {
         width: 15px;
