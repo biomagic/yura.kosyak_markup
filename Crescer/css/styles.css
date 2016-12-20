@@ -100,10 +100,14 @@ select:focus {
     height: 50px;
     width: 100px;
     font-size: 20px;
-    align-self: center;
     color: orange;
     position: absolute;
     opacity: .5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 /* Logo section */
 .logo {
@@ -205,6 +209,7 @@ select:focus {
     color: #fff;
     cursor: pointer;
     font-size: 142.85714285714286%;
+    display: block;
 }
 .navigation__li:nth-child(1) {
     width: 8.958333333333334%;
@@ -236,7 +241,9 @@ select:focus {
 }
 .submenu {
     position: absolute;
+    left: 50%;
     top: 50px;
+    margin-left: -79.5px;
     background-color: #CBDEF9;
     padding: 14px 0;
     border-radius: 12px;
@@ -371,7 +378,7 @@ select:focus {
 
 .articles-v {
     min-height: 295px;
-    margin-top: 0px;
+    margin-top: 2px;
     width: 100%;
 }
 .articles-v__figure {
@@ -420,7 +427,7 @@ select:focus {
     width: 100%;
 }
 .articles-h-box {
-    width: inherit;
+    width: 100%;
     position: relative;
     top: 30px;
     margin-bottom: 39px;
@@ -429,7 +436,7 @@ select:focus {
     content: "";
     border-top: 1px solid #b29eff;
     position: absolute;
-    width: inherit;
+    width: 100%;
     top: -20px;
 }
 .articles-h__fcaption {
@@ -503,7 +510,7 @@ select:focus {
 .pagination__select-box {
     flex-basis: 46.6557911908646%;
     padding-left: 3.2626427406199023%;
-    padding-right: 14.192495921696574%;
+    padding-right: 13.192496%;
 }
 .pagination__link {
     background: url("../img/sprite.png") no-repeat;
@@ -756,7 +763,7 @@ select:focus {
 .col-4 {
     width: 12.1%;
 }
-/*Button up*/
+/* Button up */
 
 #back-top {
     position: fixed;
@@ -794,7 +801,13 @@ select:focus {
         margin-bottom: 20px;
     }
     .tape__span {
-        margin-right: 15px;
+        margin: auto 0;
+    }
+    .pagination__select-box {
+        padding-right: 9%;
+    }
+    .footer__seperator {
+        margin: 20px 0;
     }
 }
 
@@ -847,6 +860,8 @@ select:focus {
         border-top: 1px solid #0b68b5;
         border-bottom: 1px solid #0b68b5;
         background: #bdd9f0;
+        left: 0;
+        margin-left: 0;
     }
     .submenu__li:hover {
         background: #0b68b5;
@@ -889,6 +904,10 @@ select:focus {
     .articles-v__fcaption {
         text-align: center;
     }
+    .articles-h-box {
+        width: 90%;
+        margin: 0 auto 39px;
+    }
     .articles-h__img {
         margin-right: 3%;
         align-self: center;
@@ -915,11 +934,18 @@ select:focus {
     .login__p {
         text-align: center;
     }
+
     .tape__section {
         margin-bottom: 20px;
     }
+    .tape__section > * {
+        margin: auto;
+    }
     .tape__p {
         width: 90%;
+    }
+    .hints {
+        height: auto;
     }
     .hints__link {
         align-self: flex-end;
@@ -997,8 +1023,12 @@ select:focus {
     .content__div {
         font-size: 80%;
     }
+    .articles-h-box {
+        width: 100%;
+    }
     .articles-h__fig {
         flex-direction: column;
+        text-align: center;
     }
     .articles-h__fcaption {
         flex-basis: auto;

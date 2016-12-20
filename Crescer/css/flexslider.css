@@ -60,23 +60,19 @@ div.flexslider {
 .flex-active-slide {
   max-width: 100%;
 }
-
-@media (max-width: 480px) {
-    .flex-control-nav {
-      padding: 16px 15px;
-      bottom: 2px;
-    }
-    .flex-control-nav li {
-    }
-    .flex-control-paging li a {
-        width: 15px;
-        height: 15px;
-    }
-}
 .slides {
   width: 100%;
 }
 .my-video {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 480px) {
+    .flex-control-nav {
+        padding: 16px 15px;
+    }
+    .flex-control-paging li a {
+        width: 15px;
+        height: 15px;
+    }
 }
