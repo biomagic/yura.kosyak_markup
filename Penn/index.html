@@ -23,9 +23,27 @@
 	                speed:1000,
 	                auto:false,
 	                loop:true,
+	                adaptiveHeight:true,
 	                onSliderLoad: function() {
 	                    $('#image-gallery').removeClass('cS-hidden');
-	                }  
+	                },
+	                responsive : [
+	                            {
+	                                breakpoint:800,
+	                                settings: {
+	                                    item:1,
+	                                    slideMove:1,
+	                                    slideMargin:16,
+	                                  }
+	                            },
+	                            {
+	                                breakpoint:480,
+	                                settings: {
+	                                    item:1,
+	                                    slideMove:1
+	                                  }
+	                            }
+	                        ]  
 	            });
 			});
 	</script>

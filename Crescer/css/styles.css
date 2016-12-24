@@ -241,9 +241,8 @@ select:focus {
 }
 .submenu {
     position: absolute;
-    left: 50%;
+    left: calc(50% - 79.5px);
     top: 50px;
-    margin-left: -79.5px;
     background-color: #CBDEF9;
     padding: 14px 0;
     border-radius: 12px;
@@ -320,7 +319,7 @@ select:focus {
 }
 .aside-right {
     height: 1082px;
-    flex-basis: 287px;
+    width: 287px;
 }
 /* Right side */
 
@@ -439,8 +438,11 @@ select:focus {
     width: 100%;
     top: -20px;
 }
+.articles-h__img {
+	width: 23.491027732463294%;
+}
 .articles-h__fcaption {
-    flex-basis: 450px;
+    width: 73.4094616639478%;
 }
 /* Background for blocks */
 
@@ -523,7 +525,6 @@ select:focus {
     color: #849db8;
     font-size: 18px;
     margin: auto;
-    line-height: 16px;
 }
 .pagination__select {
     border: none;
@@ -569,6 +570,7 @@ select:focus {
 }
 .login__form {
     padding: 21px 20px 11px 20px;
+    height: 178px;
     min-height: 178px;
 }
 .login__input {
@@ -851,7 +853,7 @@ select:focus {
     .submenu {
         position: relative;
         padding: 0;
-        top: initial;
+        top: 0;
         width: 100%;
         text-align: center;
         background: none;
@@ -882,7 +884,6 @@ select:focus {
     .aside-right {
         width: 100%;
         height: auto;
-        flex-basis: 100%;
     }
     .aside-left > *,
     .aside-right > * {
@@ -1031,10 +1032,11 @@ select:focus {
         text-align: center;
     }
     .articles-h__fcaption {
-        flex-basis: auto;
+        width: auto;
     }
     .articles-h__img {
         margin: 0 0 10px;
+        width: auto;
     }
     .color-header {
         text-align: center;
@@ -1050,6 +1052,7 @@ select:focus {
         flex-basis: 100%;
         margin: 0 auto;
         height: 25px;
+        line-height: 25px;
     }
     .pagination__link {
         flex-basis: 99px;

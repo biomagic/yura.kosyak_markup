@@ -351,7 +351,9 @@ a {
 
 
 /* Left block > banner */
-
+.banner__div {
+	width: 100px;
+}
 .banner__h1 {
 	font-family: GothamProBlack, sans-serif;
 	font-size: 171.42857142857142%;
@@ -627,6 +629,9 @@ a {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.banner__div {
+		width: auto;
 	}
 	.banner__h1 {
 		font-size: 150%;

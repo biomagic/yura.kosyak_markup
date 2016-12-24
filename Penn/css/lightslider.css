@@ -417,3 +417,31 @@
     background: radial-gradient(circle farthest-corner at 15% 50%, transparent 85%, rgba(0, 0, 0, .2)),
     radial-gradient(circle farthest-corner at 85% 50%, transparent 85%, rgba(0, 0, 0, .2));
 }
+.slider__img {
+    max-width: 100%;
+}
+
+@media(max-width: 540px) {
+    .lSSlideOuter .lSPager.lSpg {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90px;
+        margin: auto;
+    }
+    .lSAction {
+        right: 0;
+        margin: auto;
+        width: 0px;
+        left: 0;
+    }
+    .lSAction > .lSPrev {
+        left: -60px;
+    }
+    .lSAction > .lSNext {
+        right: -60px;
+    }
+    .clone .slider__p {
+        display: none;
+    }
+}
